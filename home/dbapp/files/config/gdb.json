@@ -1,11 +1,9 @@
 {
     "DbType": "mysql",
     "DbIP": "127.0.0.1",
-    "DbName": "test",
+    "DbName": "testdb",
     "DbPort": 3306,
     "DbUser": "root",
-    "DbPassword": "root",
-    "Prefix": "dbapp_",
-    "Debug": false,
-    "PagingCount": 40
+    "DbPassword": "laymer110",
+    "Debug": false
 }

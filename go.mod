@@ -2,7 +2,7 @@ module github.com/laymer110/dbapp
 
 go 1.20
 
-require github.com/laymer110/laymer.core v1.0.7
+require github.com/laymer110/laymer.core v1.0.8
 
 require (
 	github.com/Microsoft/go-winio v0.6.0 // indirect

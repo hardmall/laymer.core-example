@@ -1,9 +1,10 @@
 {
-    "DbType": "mysql",
+    "DbType": "sqlserver",
     "DbIP": "127.0.0.1",
-    "DbName": "test",
-    "DbPort": 3306,
-    "DbUser": "root",
-    "DbPassword": "root",
-    "Debug": false
+    "DbName": "hycdr",
+    "DbPort": 10047,
+    "DbUser": "djk",
+    "DbPassword": "djkP@ssw0rd",
+    "Debug": true,
+    "PagingCount": 40
 }

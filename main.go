@@ -1,8 +1,9 @@
 package main
 
 import (
-	"net/url"
 	"os"
+
+	"log"
 
 	"github.com/laymer110/laymer.core/database"
 )
@@ -18,11 +19,15 @@ func main() {
 		Version:       "1.0.0",
 		WebConfigPath: "wconfig.json",
 		GDBConfigPath: "gdb.json",
-		XDBConfigPath: "xdb.json",
+		XDBConfigPath: []string{"xdb.json"},
 	})
 	database.SetService(dsvc)
-	q := database.DService{DbName: ""}
+	q := database.DService{DbName: "xdb"}
 	var dd []database.APIQueryApiInfo
 	database.Svc().DB().Where(&database.APIQueryApiInfo{}).Find(&dd)
-	q.QueryService(dd, make(map[string]interface{}), url.Values{"pageNum": []string{"2"}})
+	a, b, c, err := q.QueryServiceWithPage(dd, make(map[string]interface{}), 2, 5)
+	if err != nil {
+		log.Fatal("查询发生错误", err)
+	}
+	log.Println(a, b, c)
 }
