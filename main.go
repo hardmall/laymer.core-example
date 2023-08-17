@@ -21,8 +21,8 @@ func main() {
 		GDBConfigPath: "gdb.json",
 		XDBConfigPath: []string{"xdb.json"},
 	})
-	database.SetService(dsvc)             //设置查询
-	database.InitTempQuery()              //初始化缓存
+	database.SetService(dsvc) //设置查询
+
 	q := database.DService{DbName: "xdb"} //使用xdb查询
 	var dd []database.APIQueryApiInfo
 	database.Svc().DB().Where(&database.APIQueryApiInfo{}).Find(&dd)
@@ -31,4 +31,8 @@ func main() {
 		log.Fatal("查询发生错误", err)
 	}
 	log.Println(a, b, c)
+
+	//使用缓存查询
+	info := database.DeCheck().GetTableByID(1)
+	log.Println(info)
 }

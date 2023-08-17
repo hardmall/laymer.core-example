@@ -1,8 +1,8 @@
-module github.com/laymer110/dbapp
+module github.com/hardmall/core-example
 
 go 1.20
 
-require github.com/laymer110/laymer.core v1.0.8
+require github.com/laymer110/laymer.core v1.0.10
 
 require (
 	github.com/Microsoft/go-winio v0.6.0 // indirect
@@ -47,8 +47,6 @@ require (
 	github.com/jmoiron/sqlx v1.3.5 // indirect
 	github.com/kevinburke/ssh_config v0.0.0-20201106050909-4977a11b4351 // indirect
 	github.com/laymer110/go-plugins/v4/registry/consul v0.0.0-20220927035200-92b6d5771c8a // indirect
-	github.com/laymer110/go-plugins/v4/store/consul v1.0.1 // indirect
-	github.com/laymer110/go-plugins/v4/store/file v0.0.0-20220927035200-92b6d5771c8a // indirect
 	github.com/laymer110/go-plugins/v4/transport/grpc v0.0.0-20220927035200-92b6d5771c8a // indirect
 	github.com/laymer110/go-rsa v0.0.2 // indirect
 	github.com/laymer110/gorpc v0.0.2 // indirect
@@ -69,7 +67,6 @@ require (
 	github.com/xanzy/ssh-agent v0.3.0 // indirect
 	github.com/xrash/smetrics v0.0.0-20201216005158-039620a65673 // indirect
 	go-micro.dev/v4 v4.10.2 // indirect
-	go.etcd.io/bbolt v1.3.6 // indirect
 	golang.org/x/crypto v0.9.0 // indirect
 	golang.org/x/mod v0.9.0 // indirect
 	golang.org/x/net v0.10.0 // indirect
@@ -85,5 +82,5 @@ require (
 	gorm.io/driver/mysql v1.5.1 // indirect
 	gorm.io/driver/postgres v1.5.2 // indirect
 	gorm.io/driver/sqlserver v1.5.1 // indirect
-	gorm.io/gorm v1.25.1 // indirect
+	gorm.io/gorm v1.25.2 // indirect
 )
